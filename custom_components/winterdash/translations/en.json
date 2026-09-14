@@ -1,0 +1,17 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WinterDash",
+        "description": "Pick a WinterDash board to mirror. The board must already be added to Home Assistant as an ESPHome device.",
+        "data": {
+          "device": "Board"
+        }
+      }
+    },
+    "abort": {
+      "no_devices": "No WinterDash boards found. Add the board's ESPHome device to Home Assistant first, then try again.",
+      "already_configured": "This board is already set up."
+    }
+  }
+}
