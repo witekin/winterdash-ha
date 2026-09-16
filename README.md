@@ -96,8 +96,8 @@ Copy `custom_components/winterdash/` into your HA `config/custom_components/` fo
 
 ## Notes
 
-- **Icon:** the WinterDash brand icon is pending registration in `home-assistant/brands`; until
-  that lands HA shows a generic integration icon. Functionality is unaffected.
+- **Icon:** the WinterDash brand icon ships with the integration (the `brand/` folder), so Home
+  Assistant shows it on the integration and device pages — no `home-assistant/brands` entry needed.
 - **YAML-mode dashboards:** the card resource auto-registers on storage-mode dashboards only. On a
   YAML dashboard, add the resource manually (the URL is logged on setup).
 
