@@ -17,6 +17,18 @@ def auto_enable_custom_integrations(enable_custom_integrations):
     yield
 
 
+@pytest.fixture(autouse=True)
+def bypass_frontend_dependency(hass: HomeAssistant) -> None:
+    """Mark ``frontend`` as already set up.
+
+    The integration hard-depends on ``frontend`` for the bundled Lovelace card, so starting the
+    config flow would otherwise try to set it up — but ``frontend`` needs the compiled
+    ``hass_frontend`` package, which isn't installed in the test environment. The config flow
+    uses no frontend API, so we mark it loaded to skip that dependency setup.
+    """
+    hass.config.components.add("frontend")
+
+
 @pytest.fixture
 def add_board(hass: HomeAssistant) -> Callable[..., dr.DeviceEntry]:
     """Return a helper that registers a board-like device in the registry.
