@@ -1,4 +1,25 @@
-# WinterDash for Home Assistant
+<p align="center">
+  <a href="https://witekin.github.io/winterdash/"><img src=".github/winterdash-header.png" alt="WinterDash" width="400"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/witekin/winterdash-ha/releases"><img src="https://img.shields.io/github/v/release/witekin/winterdash-ha?color=38bdf8&label=release" alt="Latest release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/witekin/winterdash-ha?color=2f855a" alt="License: GPL-3.0"></a>
+  <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=witekin&repository=winterdash-ha&category=integration"><img src="https://img.shields.io/badge/HACS-Custom-41BDF5?logo=homeassistant&logoColor=fff" alt="HACS custom repository"></a>
+</p>
+
+<p align="center"><em>Your WinterDash charge dashboard — the vehicle and its status, mirrored into Home Assistant.</em></p>
+
+---
+
+<p align="center">
+  <a href="https://witekin.github.io/winterdash/"><img src="https://img.shields.io/badge/Website-30363d?style=for-the-badge" alt="Website"></a>
+  <a href="https://witekin.github.io/winterdash/flash/"><img src="https://img.shields.io/badge/Flash_a_board-38bdf8?style=for-the-badge&labelColor=38bdf8" alt="Flash a board"></a>
+  <a href="https://github.com/witekin/winterdash/wiki"><img src="https://img.shields.io/badge/Wiki-30363d?style=for-the-badge" alt="Wiki"></a>
+  <a href="https://www.youtube.com/@WinterDashESP"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
+</p>
+
+---
 
 Home Assistant integration **+ Lovelace card** for [WinterDash][firmware] — mirror your battery
 charger's dashboard (the vehicle **hero** image + live status) into Home Assistant.
