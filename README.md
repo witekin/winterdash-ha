@@ -39,6 +39,13 @@ can't get over the native API: the hero image.
 
 ### HACS (recommended)
 
+[![Open your Home Assistant instance and add this repository to HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=witekin&repository=winterdash-ha&category=integration)
+
+Click the badge above to add this repository to HACS in one step, then **Download** it and
+**restart** Home Assistant.
+
+Or add it manually:
+
 1. In HACS, open the three-dot menu → **Custom repositories**.
 2. Add `https://github.com/witekin/winterdash-ha` with category **Integration**.
 3. Search for **WinterDash** in HACS and install it.
@@ -76,6 +83,7 @@ Copy `custom_components/winterdash/` into your HA `config/custom_components/` fo
 ## Links
 
 - Firmware / hardware project: **https://github.com/witekin/winterdash**
+- Documentation wiki (build, flash, boards, chargers): **https://github.com/witekin/winterdash/wiki**
 
 ## License
 
