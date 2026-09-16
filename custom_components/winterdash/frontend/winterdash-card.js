@@ -15,7 +15,7 @@
  * holds the data. English-only strings live in STR (one place, i18n-ready if there's ever demand).
  */
 
-const CARD_VERSION = "0.1.2";
+const CARD_VERSION = "0.2.0";
 
 // All user-facing card strings in one place (en-only; centralized so a future i18n is a small change).
 const STR = {

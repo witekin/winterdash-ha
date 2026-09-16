@@ -84,6 +84,13 @@ Copy `custom_components/winterdash/` into your HA `config/custom_components/` fo
    WinterDash card resource.
 4. Add a card to a dashboard → search **WinterDash** → pick the board device. Done.
 
+## Removing
+
+1. **Settings → Devices & services → WinterDash → ⋮ → Delete** — removes the config entry and its
+   Hero image entity.
+2. In **HACS**, open **WinterDash → ⋮ → Remove**, then **restart** Home Assistant to unload the
+   files. (This leaves your ESPHome board and its own entities untouched.)
+
 ## The card
 
 - One config option: the WinterDash **device** (a picker filtered to this integration).

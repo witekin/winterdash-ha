@@ -24,6 +24,21 @@ jobs:
       - uses: hacs/action@main
         with:
           category: integration
-          # `winterdash` is not registered in home-assistant/brands yet (follow-up PR);
-          # ignore the brands check until that lands so it doesn't fail the run.
+          # `winterdash` is not in home-assistant/brands (custom integrations ship their own
+          # brand/ images since HA 2026.3); skip the brands check so it doesn't fail the run.
           ignore: brands
+
+  tests:
+    name: pytest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -r requirements_test.txt
+      - run: >-
+          pytest tests
+          --cov=custom_components.winterdash.config_flow
+          --cov-report=term-missing
+          --cov-fail-under=90

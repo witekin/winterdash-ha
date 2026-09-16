@@ -1,0 +1,57 @@
+rules:
+  # Bronze
+  action-setup:
+    status: exempt
+    comment: The integration registers no service actions.
+  appropriate-polling:
+    status: exempt
+    comment: >-
+      Push-based (iot_class local_push). The hero image is re-fetched only when the board's
+      change token changes, never on a timer.
+  brands:
+    status: exempt
+    comment: >-
+      The brand icon and logo ship with the integration (custom_components/winterdash/brand/),
+      the supported path for custom integrations since Home Assistant 2026.3; the integration is
+      not registered in the home-assistant/brands repository (which no longer accepts custom
+      integrations).
+  common-modules:
+    status: exempt
+    comment: >-
+      A single one-entity image platform with no coordinator or shared entity base, so there is
+      no common module to extract.
+  config-flow: done
+  config-flow-test-coverage: done
+  dependency-transparency: done
+  docs-actions:
+    status: exempt
+    comment: The integration exposes no service actions.
+  docs-conditions:
+    status: exempt
+    comment: The integration exposes no conditions.
+  docs-high-level-description: done
+  docs-installation-instructions: done
+  docs-removal-instructions: done
+  docs-triggers:
+    status: exempt
+    comment: The integration exposes no triggers.
+  entity-event-setup: done
+  entity-unique-id: done
+  has-entity-name: done
+  runtime-data:
+    status: exempt
+    comment: >-
+      The config entry stores only the board MAC; the single entity holds its own state and the
+      only shared flag is genuinely global (one-time card registration), so there is no per-entry
+      runtime object to keep in ConfigEntry.runtime_data.
+  test-before-configure:
+    status: exempt
+    comment: >-
+      The flow selects from ESPHome devices already added to Home Assistant and opens no
+      connection at config time, so there is nothing to test-connect.
+  test-before-setup:
+    status: exempt
+    comment: >-
+      Setup only attaches an image entity to an existing ESPHome-managed device; there is no
+      external connection to validate at setup.
+  unique-config-entry: done

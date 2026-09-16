@@ -1,0 +1,5 @@
+# Test tooling for the WinterDash integration (config-flow coverage).
+# pytest-homeassistant-custom-component pins a matching Home Assistant core; it is left
+# unpinned on the first CI run and then pinned to the resolved version for reproducibility.
+pytest-homeassistant-custom-component
+pytest-cov
